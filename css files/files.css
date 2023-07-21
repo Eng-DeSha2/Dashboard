@@ -1,0 +1,110 @@
+.page .contain .boxs .left{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    gap: 20px;  
+    flex: 1;
+  
+  }
+  @media (max-width: 767px) {
+    .page .contain .boxs  {
+      display: grid;
+      grid-template-columns: minmax(250px, 1fr);
+      margin-left: 10px;
+      margin-right:10px;
+      gap: 10px;
+    }
+    .page .contain .boxs {
+   flex-direction: column-reverse;
+    }
+    .page .contain .boxs .right{
+        margin-left: 20px;
+      }
+
+  }
+  .page .contain .boxs {
+    display: flex;
+    
+  }
+  .page .contain .boxs .right{
+    margin-right: 20px;
+   
+  }
+  .page .contain .boxs .right  h2{
+    margin-bottom: 15px;
+  }
+  .page .contain .boxs .right  .box-one , .box-two , .box-three , .box-four{
+    display: flex;
+    justify-content: space-between;
+  border: 2px solid #eee;
+  margin-top: 10px;
+  }
+  .page .contain .boxs .right .box-right .left{
+    display: flex;
+  }
+  .page .contain .boxs .right .box-right .left i{
+    margin-top: 20px;
+    background-color: rgb(0 117 255 / 20%);
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    font-size: 15px;
+  }
+  .page .contain .boxs .right  .box-right .left .info {
+    margin-top: 20px;
+  margin-left: -20px;
+  font-size: 13px;
+  font-weight: bold;
+  
+  }
+  .page .contain .boxs .right  .box-right .left .info p{
+    margin-bottom: 4px;
+  }
+  .page .contain .boxs .right  .box-right .left .info span{
+    color: gray;
+  }
+  .page .contain .boxs .right .box-right   .right p{
+    margin-top: 20px;
+    font-size: 13px;
+    color: gray;
+    font-weight: bold;
+  }
+  .page .contain .boxs .box1 , .box2 ,.box3 ,.box4,.box5,.box6,
+  .box7,.box8,.box9,.box10 , .box-right{
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+  
+  }
+  .page .contain .boxs  .icon {
+    color: gray;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  }
+  .page .contain .boxs   .img{
+text-align: center;
+
+  }
+  .page .contain .boxs   .img img{
+    width: 70px;
+    margin-bottom: 20px;
+
+  }
+  .page .contain .boxs   .txt-left p{
+ color: gray;
+ font-size: 15px;
+ margin-bottom: 10px;
+  }
+  .page .contain .boxs  .bottom{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: gray;
+  }

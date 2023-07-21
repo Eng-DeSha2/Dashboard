@@ -1,0 +1,101 @@
+.page .contain .box{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+  
+  }
+  @media (max-width: 767px) {
+    .page .contain .box  {
+      display: grid;
+      grid-template-columns: minmax(250px, 1fr);
+      margin-left: 10px;
+      margin-right:10px;
+      gap: 10px;
+    }
+  }
+  .page .contain .box .box1 , .box2 , .box3 , .box4 , .box5 ,
+  .box6 , .box7 , .box8 , .box9{
+    padding: 15px;
+  }
+  .box7 ,  .box9{
+    background-color: white;
+    border-radius: 10px;
+  }
+  .page .contain .box  .contact{
+    margin-bottom: 10px;
+   
+  }
+  .page .contain .box  .contact i{
+    background-color: #eee;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 13px;
+    color: gray;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+  .page .contain .box  .contact i:hover{
+    background-color: blueviolet;
+    transition: 0.5s;
+    color: white;
+    cursor: pointer;
+  }
+  .page .contain .box  .txt-img{
+ text-align: center;
+ margin-bottom: 15px;
+  }
+  .page .contain .box  .txt-img img{
+width: 100px;
+height: 100px;
+border-radius: 100px;
+margin-bottom: 15px;
+border: 1px solid blueviolet;
+transition: 1s;
+  }
+  .page .contain .box  .txt-img img:hover{
+    transform: translateY(-5px);
+    transition: 1s;
+    cursor: pointer;
+  }
+  .page .contain .box  .txt-img h4{
+    margin-bottom: 5px;
+  }
+  .page .contain .box  .txt-img p{
+   color: gray;
+   font-size: 14px;
+  }
+  .page .contain .box  .txt{
+    padding: 10px;
+    color: gray;
+    margin-bottom: 10px;
+  }
+  .page .contain .box  .txt .one , .tw{
+    margin-bottom: 10px;
+  }
+  .page .contain .box  .foot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .page .contain .box  .foot .left span{
+    color: gray;
+    font-size: 13px;
+  }
+  .page .contain .box  .foot .right  a{
+    background-color: blueviolet;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 13px;
+
+  }
+  .page .contain .box  .foot .right span  a{
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 13px;
+  }

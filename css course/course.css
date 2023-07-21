@@ -1,0 +1,79 @@
+.page .contain .boxs{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+  
+  }
+  @media (max-width: 767px) {
+    .page .contain .boxs  {
+      display: grid;
+      grid-template-columns: minmax(200px, 1fr);
+      margin-left: 10px;
+      margin-right: 10px;
+      gap: 10px;
+    }
+  }
+  .page .contain .boxs .box1 , .box2 , .box3 , .box4 , .box5 ,
+  .box6 , .box7 , .box8-1 , .box9{
+    background-color: white;
+    border-radius: 10px;
+  }
+  .page .contain .boxs  img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 100px;
+    transition: 1s;
+    
+  }
+  .page .contain .boxs  img:hover{
+    cursor: pointer;
+    border-bottom-right-radius: 0;
+    transition: 1s;
+  }
+  .page .contain .boxs  .text{
+    padding: 20px;
+  }
+  .page .contain .boxs  .text h4{
+    margin-bottom: 15px;
+  }
+  .page .contain .boxs  .text p{
+    color: gray;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  .page .contain .boxs  .info{
+        text-align: center;
+        transform: 1s;
+  }
+  .page .contain .boxs  .info:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: 1s;
+  }
+  .page .contain .boxs  .info span{
+
+    position: relative;
+    top: -11px;
+    color: white;
+    background-color: blueviolet;
+    padding: 4px 10px;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  .page .contain .boxs  .footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+  }
+  .page .contain .boxs  .footer span , p{
+    color: gray;
+    font-size: 15px;
+  }
+  .page .contain .boxs  .footer span i{
+    color: blueviolet;
+  }

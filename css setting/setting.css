@@ -1,0 +1,433 @@
+/* .page .contain .boxs{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(400px , 1fr));
+    gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+ @media(max-width:767px){
+    .page .contain .boxs {
+    grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+    gap: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    } 
+
+}  */
+/* box1 */
+.page .contain .box .box1 , .box2 , .box3 , .box4 , .box5 , .box6{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.page .contain .box .box1 h2  , .box2 h2 , .box3 h2 , .box4 h2 , .box5 h2 , .box6 h2{
+    margin-bottom: 10px;
+
+}
+.page .contain .box .box1 p , .box2 p , .box3 p , .box4 p , .box5 p , .box6 p{
+    color: gray;
+    margin-bottom: 20px;
+}
+.page .contain .box .box1 .text-box1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page .contain .box .box1 .text-box1 h4{
+    margin-bottom: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.page .contain .box .box1 .text-box1 p{
+    font-size: 14px;
+}
+/* checkbox */
+.page .contain .box .box1 label input{
+    display: none;
+
+}
+ .page .contain .box .box1 label .switch{
+    background-color: red;
+    width: 70px;
+    height: 30px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 0.6s;
+    position: relative;
+    margin-bottom: 20px;
+}
+.page .contain .box .box1 label .switch::after{
+    content: "\00D7";
+    color: red;
+    font-size: 18px;
+    font-weight: 900;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.page .contain .box .box1 label input:checked + .switch {
+    background-color: green;
+    transition: 1s;    
+} 
+.page .contain .box .box1 label input:checked + .switch::after{
+    left: 42px;
+    color: green;
+    transition: 1s;
+    content: "\2713";
+    font-size: 18px;
+    font-weight: 900;
+}
+/* end checkbox  */
+.page .contain .box .box1 textarea{
+    resize: none;
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    margin-top: 5px;
+}
+.page .contain .box .box1 textarea:focus::placeholder{
+    opacity: 0;
+}
+.page .contain .box .box1 .send {
+    text-align: right;
+margin-top: 10px;
+}
+.page .contain .box .box1 .send a{
+        background-color: blueviolet;
+        padding: 5px 10px;
+        border-radius: 10px;
+        color: white;
+        
+}
+/* box2 */
+.page .contain .box .box2 form p{
+margin-bottom: 10px;
+margin-top: 10px;
+
+} 
+.page .contain .box .box2 form input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+}
+.page .contain .box .box2 form input:focus::placeholder{
+opacity: 0;
+}
+.page .contain .box .box2 form .pass{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.page .contain .box .box2 form a{
+    margin-left: 20px;
+    background-color: blueviolet;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+}
+/* box3 */
+.page .contain .box .box3 .one-box3 , .two-box3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page .contain .box .box3 .one-box3 .left-one-box3 h4 , .two-box3 h4 , .three-box3 h4{
+margin-bottom: 10px;
+}
+.page .contain .box .box3 .one-box3 .right-one-box3 a{
+background-color: blueviolet;
+padding: 5px 10px;
+color: white;
+border-radius: 10px;
+}
+.page .contain .box .box3 .two-box3 {
+    margin-top: 20px;
+
+}
+.page .contain .box .box3 .two-box3  label input{
+    display: none;
+}
+.page .contain .box .box3 .two-box3  label .switch{
+    background-color: red;
+    width: 70px;
+    height: 30px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 0.6s;
+    position: relative;
+    margin-bottom: 20px;
+}
+.page .contain .box .box3 .two-box3  label .switch::after{
+    content: "\00D7";
+    color: red;
+    font-size: 18px;
+    font-weight: 900;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page .contain .box .box3 .two-box3  label input:checked +  .switch{
+    background-color: green;
+    transition: 1s;
+}
+.page .contain .box .box3 .two-box3  label input:checked +  .switch::after{
+    left: 42px;
+    color: green;
+    transition: 1s;
+    content: "\2713";
+    font-size: 18px;
+    font-weight: 900;
+}
+.page .contain .box .box3 .three-box3{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.page .contain .box .box3 .three-box3 a{
+    color: black;
+    background-color: #eee;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+/* box4 */
+.page .contain .box .box4 .social{
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+}
+.page .contain .box .box4 .social  .one , .two , .three ,.four{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+.page .contain .box .box4 .social .three ,.four{
+    margin-top: -20px;
+
+}
+.page .contain .box .box4 .social  .one input , .two input , .three input , .four input{
+margin-left: 30px;
+
+
+}
+.page .contain .box .box4 .social  .one i::before , .two  i::before , .three  i::before , .four i::before{
+    position: absolute;
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+}
+.social  .one i::before{
+    top: 20px;
+    left: -6px;
+    color: #0077b5;
+}
+.social .two  i::before{
+    top: 20px;
+    left: -5px;
+   padding-right: 15px;
+   color: blue;
+}
+.social .three  i::before{
+    top: 20px;
+    left: -4px;
+    color: rgb(0, 0, 193);
+
+}
+.social .four  i::before{
+    top: 20px;
+    left: -3px;
+   padding-right: 6px;
+   color: red;
+
+}
+.page .contain .box .box4 .social .one input , .two input , .three input , .four input{
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #eee;
+}
+/* box5 */
+.page .contain .box .box5 .checkbox{
+padding: 10px;
+font-size: 18px;
+}
+.page .contain .box .box5 .checkbox input{
+    -webkit-appearance: none;
+    appearance: none;
+    margin-bottom: 30px;
+}
+.page .contain .box .box5 .checkbox label{
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+
+}
+.page .contain .box .box5 .checkbox label::before{
+    content: " ";
+    width: 18px;
+    height: 18px;
+    margin-top: -11px;
+margin-bottom: 30px;
+    border:2px solid gray ;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    border-radius: 5px;
+}
+.page .contain .box .box5 .checkbox input:checked + 
+label::before{
+    border-color: blueviolet;
+}
+.page .contain .box .box5 .checkbox label::after{
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: blueviolet;
+    width: 20.5px;
+    height: 20.5px;
+    text-align: center;
+    margin-top: -10.5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0)  rotate(360deg);
+    transition: 0.5s;
+  
+}
+.page .contain .box .box5 .checkbox input:checked + label::after{
+    transform: scale(1);
+}
+/* box6 */
+.page .contain .box .box6 p{
+    margin-bottom: -5px;
+}
+.page .contain .box .box6 .radio {
+    padding: 10px;
+font-size: 18px;
+margin-bottom: 5px;
+}
+.page .contain .box .box6 .radio input{
+    appearance: none;
+    -webkit-appearance: none;
+    margin-bottom: 30px;
+}
+.page .contain .box .box6 .radio label{
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+
+}
+.page .contain .box .box6 .radio label::before{
+content: " ";
+width: 18px;
+height: 18px;
+border-radius: 50%;
+border: 2px solid gray;
+position: absolute;
+left: 0;
+top: 50%;
+margin-top: -11px;
+}
+.page .contain .box .box6 .radio input:checked + label::before{
+    border: 2px solid blueviolet;
+}
+.page .contain .box .box6 .radio label::after{
+    content: " ";
+    background-color: blueviolet;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    top: 70%;
+    margin-top: -11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: 0.3s;
+  
+}
+.page .contain .box .box6 .radio input:checked + label::after{
+transform: scale(1);
+}
+.page .contain .box .box6 .radio2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page .contain .box .box6 .radio2 .on1-radio,.on2-radio,.on3-radio{
+width: 100%;
+margin-left: 10px;
+
+}
+.page .contain .box .box6 .radio2 .server{
+    border: 2px solid #eee;
+    padding: 25px 15px;
+    border-radius: 10px;
+text-align: center; 
+
+}
+.page .contain .box .box6 .radio2 .server  label {
+    font-size: 18px;
+    cursor: pointer;
+}
+.page .contain .box .box6 .radio2  label i{
+display: block;
+margin-top: -10px;
+margin-bottom: 15px;
+font-size: 15px;
+}
+.page .contain .box .box6 .radio2 input{
+    appearance: none;
+    -webkit-appearance: none;
+}
+.page .contain .box .box6 .radio2  input:checked + .server{
+    border: 2px solid  blueviolet;
+    color: blueviolet;
+}
+@media (max-width:767px){
+    .page .contain .box .box6 .radio2{
+        display: block;
+    }
+}
